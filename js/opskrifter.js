@@ -38,14 +38,14 @@ function getRecipes() {
       const filteredRecipes = applyMealTypeFilter(allRecipes);
       if (filteredRecipes.length === 0) {
         const selectedMealType = getQueryParam("mealType");
-        listContainer.innerHTML = `<p>Ingen opskrifter fundet for kategori "${selectedMealType}".</p>`;
+        listContainer.innerHTML = `<p>No recipes found for category "${selectedMealType}".</p>`;
       } else {
         showRecipes(filteredRecipes);
       }
     })
     .catch((error) => {
       console.error("Fejl ved hentning af opskrifter:", error);
-      listContainer.innerHTML = "<p>Der opstod en fejl ved hentning af opskrifter.</p>";
+      listContainer.innerHTML = "<p>Error</p>";
     });
 }
 
@@ -60,27 +60,27 @@ function showRecipes(recipes) {
         <h2 class="card-title">${recipe.name}</h2>
 
         <div class="space">
-<p>Tid</p>
+<p>Time</p>
           <p>${recipe.prepTimeMinutes + recipe.cookTimeMinutes} min</p>
         </div>
 
         <div class="space">
-<p>Serveringer</>
+<p>Servings</>
           <p>${recipe.servings}</p>
         </div>
 
    <div class="space">
-<p>Ingredienser</p>
+<p>Ingredients</p>
           <p>${recipe.ingredients.length}</p>
         </div>
 
         <div class="space">
-          <p>Sværhedsgrad</p>
+          <p>Difficulty</p>
           <p>${recipe.difficulty}</p>
         </div>
 
 
-        <a class="recipeBtn button" href="enkeltopskrift.html?recipeId=${recipe.id}">Se Opskrift</a>
+        <a class="recipeBtn button" href="enkeltopskrift.html?recipeId=${recipe.id}">See recipe</a>
         </div>
       </article>
     `;
