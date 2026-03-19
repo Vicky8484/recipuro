@@ -1,0 +1,223 @@
+/****** main-box + children ******/
+#main-box {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
+}
+
+/****** sidepanel + children ******/
+.sidepanel {
+  text-align: center;
+  padding-top: 1rem;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  z-index: 1;
+}
+
+.spSection2 {
+  background-color: #90cfb5;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.spSection2 h3 {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.spSection2 button {
+  margin-bottom: 1rem;
+}
+
+.spSection3 {
+  padding-bottom: 2rem;
+  background-color: #a2b8de;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.spSection3 h3 {
+  padding-top: 1rem;
+}
+
+.indsendInfo {
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  text-wrap: balance;
+  color: #2c2c2c;
+}
+/****** sections + children ******/
+.nyeOpskrifterSection {
+  background-color: #eae9a2;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+.nyeOpskrifterSection h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.opskrifterBox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.noCard img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.noCard h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.noCard-info {
+  background-color: #d1d087;
+  padding-bottom: 3rem;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 1rem;
+}
+
+.noCard-info a {
+  text-align: center;
+  width: 100%;
+}
+
+.noCard-info:hover a {
+  background-color: #8d8c58;
+}
+
+.kategorierSection {
+  background-color: #eea9a9;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+.kategorierSection h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.kategorierBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow-x: auto;
+}
+
+.kategori {
+  text-decoration: none;
+}
+
+.kategori h3 {
+  padding-top: 1rem;
+  color: #000;
+}
+
+.omOsSection {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.omOsSection h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.omOsBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
+  margin: auto;
+}
+
+.omOsBox img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  #main-box {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .spSection1 {
+    display: none;
+  }
+
+  .sidepanel {
+    text-align: center;
+    position: static;
+    top: 0;
+  }
+
+  /***/
+
+  .kategorierSection h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .kategorierBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .opskrifterBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    overflow-x: auto;
+  }
+
+  .bmInfoBox {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .bminfo {
+    text-align: center;
+    text-wrap: balance;
+    padding: 1rem 2rem 2rem;
+    margin: 0;
+  }
+
+  img {
+    filter: grayscale(0%);
+  }
+
+  .noCard-info {
+    background-color: #d1d087;
+  }
+
+  .noCard-info a {
+    background-color: #a6a569;
+  }
+}

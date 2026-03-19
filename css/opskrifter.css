@@ -1,0 +1,181 @@
+/************ Reset **************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/************ Layout **************/
+
+.main-box {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+#sidepanel {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  z-index: 1;
+  text-align: center;
+}
+
+.spSection1 {
+  background-color: #90cfb5;
+  border-radius: 20px;
+  padding-top: 1rem;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.spSection3 {
+  padding-bottom: 2rem;
+  background-color: #eae9a2;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.spSection3 h3 {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.indsendInfo {
+  padding: 2rem;
+  padding-top: 1rem;
+  text-wrap: balance;
+  color: #2c2c2c;
+}
+
+#recipe-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: #eea9a9;
+  border-radius: 20px;
+  padding: 2rem;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+/************ Cards **************/
+.recipe-card {
+  background-color: #d68b8b;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.recipe-card img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-title {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  color: #232323;
+}
+
+.recipeBtn {
+  background-color: #5c5c5c;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.recipeBtn:hover {
+  background-color: #a45757;
+}
+
+.cardInfo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.space {
+  background-color: #be7272;
+  margin-top: 0.5rem;
+  display: flex;
+  padding: 1rem;
+  padding-block: 5px;
+  justify-content: space-between;
+  color: #232323;
+  align-items: center;
+  height: 40px;
+}
+
+/************ Filter **************/
+.filterBtn,
+.dropbtn {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.dropbtn {
+  margin-bottom: 10px;
+}
+
+.dropbtn:focus {
+  background-color: #568a74;
+}
+
+.filterBtn {
+  width: 90%;
+  margin: auto 10px 10px;
+  background-color: #68aa8e;
+}
+
+.filterBtn:hover {
+  background-color: #437560;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+/************ Responsive **************/
+@media (max-width: 800px) {
+  .main-box {
+    grid-template-columns: 1fr;
+  }
+
+  #sidepanel {
+    position: static;
+  }
+
+  .recipe-card {
+    background-color: #e59898;
+  }
+
+  .recipeBtn {
+    background-color: #a45757;
+  }
+
+  .space {
+    background-color: #dc8f8f;
+  }
+
+  img {
+    filter: grayscale(0%);
+  }
+}

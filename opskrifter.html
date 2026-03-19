@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Peacy</title>
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/opskrifter.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img-vid/recipuro-favicon.webp">
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/opskrifter.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img-vid/recipurologo.webp" alt="Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="opskrifter.html">Opskrifter</a></li>
+                <li><a>Indsend opskrift</a></li>
+            </ul>
+
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <div class="main-box">
+            <div id="sidepanel">
+                <div class="spSection1">
+                    <div class="dropdown">
+                        <button id="dropBtn" class="dropbtn button greenBtn">Filtrer efter</button>
+
+                        <div id="myDropdown" class="dropdown-content">
+                            <button class="filterBtn button" id="filterByPrep">Under 20 min forberelse</button>
+                            <button class="filterBtn button" id="filterByCook">Under 20 min tilberedelse</button>
+                            <button class="filterBtn button" id="filterByLess">4 personer eller mindre</button>
+                            <button class="filterBtn button" id="filterByMore">4 personer eller flere</button>
+                            <button class="filterBtn button" id="filterByIngredients">Under 10 ingredienser</button>
+                            <button class="filterBtn button" id="filterByIngredients2">Over 10 ingredienser</button>
+                            <button class="filterBtn button" id="filterByCalories">Under 300 kalorier</button>
+                            <button class="filterBtn button" id="filterByCalories2">Over 300 kalorier</button>
+                        </div>
+                    </div>
+
+                    <button class="button greenBtn" id="resetBtn">Vis alle</button>
+                </div>
+
+                <div class="spSection3">
+                    <h3>Vær med!</h3>
+                    <p class="indsendInfo">Indsend en opskrift på et lækkert måltid, snack eller dessert og følg med på
+                        Instagram for at se
+                        om din opskrift bliver kåret månedens bedste!</p>
+                    <a href="" class="yellowBtn button">Indsend opskrift</a>
+                </div>
+            </div>
+            <div>
+                <section id="recipe-box">
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerInfo-box">
+            <p>Email: easypeacyfood@gmail.com</p>
+            <p>Telefon nummer: 12 34 56 78</p>
+            <p>Easy Peacy HQ: Lynghamarvej 9</p>
+        </div>
+    </footer>
+</body>
+
+</html>
