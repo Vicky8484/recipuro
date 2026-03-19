@@ -29,12 +29,12 @@ function show(recipe) {
 
                 </div>
                 <div class="infobox">
-                    <button type="button" class="collapsible">▶ Ingredienser</button>
+                    <button type="button" class="collapsible">▶ Ingredients</button>
                     <div class="content">
                         <ul><li>${recipe.ingredients.join("</li><li>")}</li></ul>
                     </div>
 
-                    <button type="button" class="collapsible">▶ Instruktioner</button>
+                    <button type="button" class="collapsible">▶ Instructions</button>
                     <div class="content">
                         <ul><li>${recipe.instructions.join("</li><li>")}</li></ul>
                     </div>
@@ -55,26 +55,26 @@ function show(recipe) {
             </div>
 
             <div class="kommentarSection">
-                <h2>3 Kommentarer</h2>
+                <h2>3 Comments</h2>
 
                 <div class="box">
                     <h4>Cecilia</h4>
-                    <p>Prøvede den her opskrift i går, vildt lækker!</p>
+                    <p>Tried this recipe yesterday, so delicious!</p>
                 </div>
 
                 <div class="box">
-                      <h4>Mathias</h4>
-                    <p>Den var hamar-god haha.. (fik du den?)</p>
+                      <h4>David</h4>
+                    <p>It was great</p>
                 </div>
 
                 <div class="box">
-                    <h4>Anemone</h4>
-                    <p>Lækker nem opskrift, laver helt klart igen en anden gang! Vil dog sige, at man kan tilføje nogle chiliflager til sidst for et ekstra kick!</p>
+                    <h4>Annie</h4>
+                    <p>Really easy and delicious, defo making again. Next time I might add some chili flakes on top for an extra kick!</p>
                 </div>
 
-                <p class="skrivHer">Skriv din egen kommentar</p>
+                <p class="skrivHer">Write a comment</p>
 
-                <input class="box2" name="kommentar" type="text" placeholder="Skriv en kommentar..." required>
+                <input class="box2" name="kommentar" type="text" placeholder="Write..." required>
 
 
                 <button type="submit" class="yellowBtn button">Send</button>
@@ -83,7 +83,7 @@ function show(recipe) {
 
             <div class="ratingSection">
 
-                <h2>Bedøm opskriften</h2>
+                <h2>Rate the recipe</h2>
                 <div class="rating">
 
                     <input type="radio" id="star5" name="rating" value="5">
@@ -102,7 +102,7 @@ function show(recipe) {
                     <label for="star1">★</label>
 
                 </div>
-                <button type="submit" class="greenBtn button">Indsend</button>
+                <button type="submit" class="greenBtn button">Send</button>
 
             </div>
         </section>`;
