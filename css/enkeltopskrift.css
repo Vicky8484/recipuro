@@ -164,9 +164,7 @@ p {
 
 .ratingSection button,
 .kommentarSection button {
-  width: 250px;
-  padding: 8px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /******************************** MOBIL  ********************************/
@@ -246,6 +244,10 @@ p {
   .opskriftHeader img {
     width: 100%;
     border-radius: 20px;
+  }
+
+  .rating label {
+    font-size: 40px;
   }
 }
 
