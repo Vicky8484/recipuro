@@ -65,6 +65,7 @@ header {
   background-color: #74879d;
   margin-bottom: 5px;
   transition: 0.2s linear;
+  padding-right: 1rem;
 }
 
 .burger {
@@ -72,6 +73,12 @@ header {
 }
 
 @media screen and (max-width: 800px) {
+  .logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 0;
+  }
+
   .menu {
     display: none;
   }
